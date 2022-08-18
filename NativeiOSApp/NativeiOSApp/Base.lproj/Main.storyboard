@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="62"/>
+        </scene>
+        <!--My View Controller2-->
+        <scene sceneID="2xe-SZ-F6b">
+            <objects>
+                <viewController storyboardIdentifier="idPremiumHome" id="KeA-qA-7oM" customClass="MyViewController2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cXr-yb-qAQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="O21-wB-lEl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuN-Xw-Mvx" userLabel="PortalButton">
+                                <rect key="frame" x="52" y="781" width="310.5" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="5q4-GL-jFs"/>
+                                </constraints>
+                                <state key="normal" image="PortalBtn"/>
+                                <connections>
+                                    <action selector="btnPortalButtonAction:" destination="KeA-qA-7oM" eventType="touchUpInside" id="t7b-7b-JFc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qty-LF-xqh" userLabel="SNameLabel">
+                                <rect key="frame" x="153" y="801.5" width="209.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bny-HH-UxG" userLabel="GameButton">
+                                <rect key="frame" x="52" y="704" width="310.5" height="65"/>
+                                <state key="normal" image="PlayBtn"/>
+                                <connections>
+                                    <action selector="btnLoadUnityGame:" destination="KeA-qA-7oM" eventType="touchUpInside" id="oP3-ab-mt1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Hx-OP-Wxr"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JuN-Xw-Mvx" firstAttribute="top" secondItem="bny-HH-UxG" secondAttribute="bottom" constant="12" id="7Lz-Tp-V0F"/>
+                            <constraint firstItem="O21-wB-lEl" firstAttribute="top" secondItem="cXr-yb-qAQ" secondAttribute="top" id="AtV-tz-R8H"/>
+                            <constraint firstItem="qty-LF-xqh" firstAttribute="centerY" secondItem="JuN-Xw-Mvx" secondAttribute="centerY" id="E5y-Kt-tah"/>
+                            <constraint firstItem="JuN-Xw-Mvx" firstAttribute="width" secondItem="cXr-yb-qAQ" secondAttribute="width" multiplier="0.75" id="K0i-KD-m0O"/>
+                            <constraint firstAttribute="bottom" secondItem="O21-wB-lEl" secondAttribute="bottom" id="MBE-pS-s0J"/>
+                            <constraint firstItem="qty-LF-xqh" firstAttribute="trailing" secondItem="JuN-Xw-Mvx" secondAttribute="trailing" id="QnH-ay-BoX"/>
+                            <constraint firstItem="JuN-Xw-Mvx" firstAttribute="bottom" secondItem="6Hx-OP-Wxr" secondAttribute="bottom" constant="-16" id="SVV-Mh-7qx"/>
+                            <constraint firstItem="O21-wB-lEl" firstAttribute="leading" secondItem="6Hx-OP-Wxr" secondAttribute="leading" id="UZr-c1-krn"/>
+                            <constraint firstItem="O21-wB-lEl" firstAttribute="trailing" secondItem="6Hx-OP-Wxr" secondAttribute="trailing" id="UuW-hp-YuF"/>
+                            <constraint firstItem="bny-HH-UxG" firstAttribute="height" secondItem="JuN-Xw-Mvx" secondAttribute="height" id="VW1-Yc-UKN"/>
+                            <constraint firstItem="bny-HH-UxG" firstAttribute="centerX" secondItem="JuN-Xw-Mvx" secondAttribute="centerX" id="iik-Jj-bZb"/>
+                            <constraint firstItem="qty-LF-xqh" firstAttribute="leading" secondItem="JuN-Xw-Mvx" secondAttribute="leading" constant="101" id="k2J-Ux-kgr"/>
+                            <constraint firstItem="JuN-Xw-Mvx" firstAttribute="centerX" secondItem="6Hx-OP-Wxr" secondAttribute="centerX" id="pmj-db-SGR"/>
+                            <constraint firstItem="bny-HH-UxG" firstAttribute="width" secondItem="JuN-Xw-Mvx" secondAttribute="width" id="sPC-UN-eXG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="premiumPortalBtn" destination="JuN-Xw-Mvx" id="Tik-Uk-STW"/>
+                        <outlet property="premiumSname" destination="qty-LF-xqh" id="XbG-au-ZdW"/>
+                        <outlet property="premiumUnityGameBtn" destination="bny-HH-UxG" id="yCc-QL-new"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kGz-AM-WOG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977" y="69"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PlayBtn" width="595" height="174"/>
+        <image name="PortalBtn" width="595" height="174"/>
+        <image name="splash" width="540" height="960"/>
+    </resources>
+</document>

@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '14.0'
+
+target 'NativeiOSApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+#pod 'MobFlowiOS', :git => "https://github.com/Shaaben/MobFlowiOS.git", :branch => '2.0.5'
+  # Pods for NativeiOSApp
+ # pod 'IOS-HTML-SDK', :git => "https://github.com/MASDKManager/IOS-HTML-SDK.git", :branch => 'main'
+  #pod 'IOS-HTML-SDK', :git => "https://github.com/MASDKManager/IOS-HTML-SDK.git", :branch => '1.0.0'
+  #pod 'MobFlowiOS', :git => 'https://github.com/MASDKManager/ios-html-sdk.git', :tag => '1.1.8'
+  pod 'MobFlowiOS', :git => 'https://github.com/MASDKManager/ios-html-sdk.git', :tag => '1.4.3'
+#pod 'MobFlowiOS'
+end

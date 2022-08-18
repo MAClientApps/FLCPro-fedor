@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="8Dg-jO-ak6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIT-In-wh1" userLabel="PortalButton">
+                    <rect key="frame" x="52" y="809" width="310.5" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="i9u-v3-f9h"/>
+                    </constraints>
+                    <state key="normal" image="PortalBtn"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mr-dr-AQq" userLabel="SNameLabel">
+                    <rect key="frame" x="153" y="829.5" width="209.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mg-Uu-W8y" userLabel="GameButton">
+                    <rect key="frame" x="52" y="732" width="310.5" height="65"/>
+                    <state key="normal" image="PlayBtn"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="SIT-In-wh1" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="12" id="3iU-Xs-5Fo"/>
+                <constraint firstAttribute="bottom" secondItem="8Dg-jO-ak6" secondAttribute="bottom" id="69g-IA-Zfm"/>
+                <constraint firstItem="8Dg-jO-ak6" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="C3Z-FB-d6h"/>
+                <constraint firstItem="1Mr-dr-AQq" firstAttribute="leading" secondItem="SIT-In-wh1" secondAttribute="leading" constant="101" id="Dsl-UY-BVj"/>
+                <constraint firstItem="SIT-In-wh1" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.75" id="FHP-ND-CnE"/>
+                <constraint firstItem="SIT-In-wh1" firstAttribute="top" secondItem="0Mg-Uu-W8y" secondAttribute="bottom" constant="12" id="JOU-5B-hYf"/>
+                <constraint firstItem="0Mg-Uu-W8y" firstAttribute="height" secondItem="SIT-In-wh1" secondAttribute="height" id="LQa-XZ-exy"/>
+                <constraint firstItem="0Mg-Uu-W8y" firstAttribute="centerX" secondItem="SIT-In-wh1" secondAttribute="centerX" id="Ryp-jU-MQt"/>
+                <constraint firstItem="SIT-In-wh1" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="T3D-xq-gXM"/>
+                <constraint firstItem="8Dg-jO-ak6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="W5y-xb-Yde"/>
+                <constraint firstItem="8Dg-jO-ak6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f4f-mB-0hu"/>
+                <constraint firstItem="1Mr-dr-AQq" firstAttribute="trailing" secondItem="SIT-In-wh1" secondAttribute="trailing" id="ieo-GN-m6M"/>
+                <constraint firstItem="0Mg-Uu-W8y" firstAttribute="width" secondItem="SIT-In-wh1" secondAttribute="width" id="mOe-x9-YVx"/>
+                <constraint firstItem="1Mr-dr-AQq" firstAttribute="centerY" secondItem="SIT-In-wh1" secondAttribute="centerY" id="mzs-X0-3KE"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="76.339285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PlayBtn" width="595" height="174"/>
+        <image name="PortalBtn" width="595" height="174"/>
+        <image name="splash" width="540" height="960"/>
+    </resources>
+</document>

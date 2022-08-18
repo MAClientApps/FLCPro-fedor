@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>247717471015-3n00qn0kha7e9oa7bbt0666v8gqj5j53.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.247717471015-3n00qn0kha7e9oa7bbt0666v8gqj5j53</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCGbMHaQuz1ebrOv9TB7OcARnTtWd3G1BM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>247717471015</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.fedor.flcpro</string>
+	<key>PROJECT_ID</key>
+	<string>hadi-s-apps</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hadi-s-apps.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:247717471015:ios:22a3801edd04ceba1aff02</string>
+</dict>
+</plist>
